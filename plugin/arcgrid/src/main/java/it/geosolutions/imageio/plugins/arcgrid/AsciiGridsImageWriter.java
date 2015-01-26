@@ -222,13 +222,13 @@ public final class AsciiGridsImageWriter extends ImageWriter {
 		noDataValueString = null;// remember the no data value can be optional
 		
 		// we do not write anything down for GRASS
-		if (rasterType.equals(AsciiGridRaster.AsciiGridRasterType.ESRI)) {
+//		if (rasterType.equals(AsciiGridRaster.AsciiGridRasterType.ESRI)) {
 			Node dummyNode = gridDescriptorNode.getAttributes().getNamedItem(
 					"noDataValue");
 
 			if (dummyNode != null)
 				noDataValueString = dummyNode.getNodeValue();
-		}
+//		}
 
 		// //
 		//

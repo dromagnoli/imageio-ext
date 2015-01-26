@@ -143,7 +143,7 @@ public final class StringToDouble {
 	 * {@link StringToDouble#getValue()} method.
 	 * 
 	 */
-	void reset() {
+	public void reset() {
 		// Resetting Values
 		value = 0.0;
 		eof = false;
